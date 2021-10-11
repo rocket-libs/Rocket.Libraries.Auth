@@ -22,6 +22,7 @@ public  class  LatticeSecretProvider : IRocketJwtSecretProvider`
 	{
 		return  Task.FromResult("something extremely secret");
 	}
+}
 ```
 
 3. Register services auth library in your ***ConfigureServices*** method.
