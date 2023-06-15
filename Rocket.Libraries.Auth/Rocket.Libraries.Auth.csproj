@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <AssemblyName>Rocket.Libraries.Auth</AssemblyName>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <CodeAnalysisRuleSet>../rocket.rules.ruleset</CodeAnalysisRuleSet>
