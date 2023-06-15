@@ -9,10 +9,14 @@ namespace Rocket.Libraries.Auth
         public const string TokenExpired = "TokenExpired";
 
         public const string InvalidSignature = "InvalidSignature";
-        public RocketJwtException (string message, string errorKey) : base (message)
+
+        public const string NoExpiry = "NoExpiry";
+
+        public RocketJwtException(string message, string errorKey) : base(message)
         {
             ErrorKey = errorKey;
         }
+
 
         public string ErrorKey { get; }
     }

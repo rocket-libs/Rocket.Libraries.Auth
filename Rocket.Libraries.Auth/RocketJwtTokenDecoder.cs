@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using JWT.Algorithms;
@@ -22,6 +23,27 @@ namespace Rocket.Libraries.Auth
         )
         {
             this.secretProvider = secretProvider;
+        }
+
+        public TokenDescription GetTokenDescription(string token)
+        {
+            var payload = JwtBuilder.Create()
+                .WithAlgorithm(new HMACSHA256Algorithm())
+                .Decode<IDictionary<string, object>>(token);
+            var expiryEpoch = default(long);
+            if (payload.ContainsKey("exp"))
+            {
+                expiryEpoch = (long)payload["exp"];
+                var dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(expiryEpoch);
+                return new TokenDescription
+                {
+                    Expires = dateTimeOffset,
+                };
+            }
+            else
+            {
+                throw new RocketJwtException("Token does not contain expiry information", RocketJwtException.NoExpiry);
+            }
         }
 
         public async Task<IDictionary<string, object>> DecodeTokenAsync(string token)
