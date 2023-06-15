@@ -1,2 +1,120 @@
+# .NET Core / Visual Studio / ReSharper / OmniSharp
+## Build artifacts
 bin/
 obj/
+Debug/
+Release/
+
+## .vscode folder
+.vscode/
+
+## Visual Studio files
+*.sln
+*.csproj.user
+*.suo
+*.user
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspx
+*.opendb
+
+## ReSharper
+_ReSharper.*
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Test files
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.swq
+*.vstest
+**/*.TestResults
+**/Screenshots/
+**/*.iTestResult
+**/*.xunit.runner.json
+**/TestResults-*.xml
+
+## NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+## Coverlet
+coverage*/.runsettings
+coverage*/coverage*.cobertura.xml
+coverage*/coverage*.json
+coverage*/lcov-report/
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+_ReSharper.*/Build/
+_ReSharper.*/PreLoadCache/
+## Unity3D generated folder
+Temp/
+[Oo]bj/
+
+## Rider
+.idea/
+*.sln.iml
+
+## User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+## NuGet
+packages/
+*.nupkg
+*.snupkg
+
+## Web
+*.jsproj
+*.map
+
+## StyleCop
+StyleCopReport.xml
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## GitVersion
+.gitversion
+
+## Others
+[Dd]ebug/
+[Rr]elease/
+$tf/
+$tf/#
+$tf/.tf/
+$tf/.tfignore
+.project.pbxproj
